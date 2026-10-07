@@ -13,6 +13,12 @@ I profiled and improved LeRobot's streaming data loader, with **30–49% higher 
 
 These are separate, workload-specific CPU measurements. My [follow-up profiling](https://github.com/huggingface/lerobot/pull/3917#issuecomment-6030290819) also reached **1,527 samples/s (3.78×)** with emulated multi-worker loading and packed collation; those experimental changes were not included in this PR.
 
+## Open-source hardware: SO-101 pen holder
+
+[**so101-pen-holder**](https://github.com/Hadrien-Cornier/so101-pen-holder) is a printed sleeve that holds a pen on the stock SO-101 gripper, so that a drawing shows the arm's tracking error. You print 4 small parts. You buy nothing, and you do not take the arm apart. It takes any round pen from 8 to 13 mm, and the tip position is known for each pen. A parametric CAD script checks every part against the stock gripper meshes. It is a design release: nobody has printed it yet.
+
+<a href="https://github.com/Hadrien-Cornier/so101-pen-holder"><img src="https://raw.githubusercontent.com/Hadrien-Cornier/so101-pen-holder/main/images/drawing-pose.png" width="520" alt="The SO-101 in a drawing pose with the printed pen sleeve on its fixed finger"></a>
+
 ## Selected pull requests
 
 These pull requests show some of the problems I work on.
@@ -29,7 +35,7 @@ These pull requests show some of the problems I work on.
 
 My current project has an ambitious goal: **build the best controller in the world for the SO-101**. I'm working toward smooth, precise trajectory tracking, comparing controllers in simulation and on my own arm.
 
-I start with the physics: gravity, friction, servo delay, and encoder limits. Then I test model-based control, state estimation, and learning from repeated motions, and explore neural networks that learn what the physics model misses. I'm also designing a pen holder so drawings can make the arm's tracking errors visible. The work is ongoing, and I document the experiments in [my SO-101 control series](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/).
+I start with the physics: gravity, friction, servo delay, and encoder limits. Then I test model-based control, state estimation, and learning from repeated motions, and explore neural networks that learn what the physics model misses. I also designed an [open-source pen holder](https://github.com/Hadrien-Cornier/so101-pen-holder) so drawings can make the arm's tracking errors visible. The work is ongoing, and I document the experiments in [my SO-101 control series](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/).
 
 ## Latest writing
 
