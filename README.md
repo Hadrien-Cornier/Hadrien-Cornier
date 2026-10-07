@@ -25,7 +25,23 @@ These pull requests show some of the problems I work on.
 | [leLab](https://github.com/huggingface/leLab) | [Preserve video chunk identity in repaired statistics](https://github.com/huggingface/leLab/pull/122) |
 | [mink](https://github.com/kevinzakka/mink) | [Use Menagerie assets in examples and tests](https://github.com/kevinzakka/mink/pull/191) |
 
-## What I learn
+## Current project: SO-101 control
+
+My current project has an ambitious goal: **build the best controller in the world for the SO-101**. I'm working toward smooth, precise trajectory tracking, comparing controllers in simulation and on my own arm.
+
+I start with the physics: gravity, friction, servo delay, and encoder limits. Then I test model-based control, state estimation, and learning from repeated motions, and explore neural networks that learn what the physics model misses. I'm also designing a pen holder so drawings can make the arm's tracking errors visible. The work is ongoing, and I document the experiments in [my SO-101 control series](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/).
+
+## Latest writing
+
+My latest series, **From policy to action: the last mile of robotics control**, follows the SO-101 project from the joint physics to learned corrections and hardware:
+
+1. [One equation, and every way the arm misses it](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/) (October 2, 2026)
+2. [Seeing finer than the sensor](https://hadrien-cornier.github.io/robotics/so101-2-finer-than-the-sensor/) (October 3, 2026)
+3. [Six ways to choose the goal](https://hadrien-cornier.github.io/robotics/so101-3-choosing-the-goal/) (October 4, 2026)
+4. [Learning what the physics misses](https://hadrien-cornier.github.io/robotics/so101-4-learning-what-physics-misses/) (October 5, 2026)
+5. [A pen holder that shows the arm’s error, not its own](https://hadrien-cornier.github.io/robotics/so101-pen-holder/) (October 5, 2026)
+
+### Earlier writing and experiments
 
 These articles and experiments record what I learn and the evidence I use.
 
