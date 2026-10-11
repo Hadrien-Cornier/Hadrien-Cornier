@@ -1,6 +1,6 @@
-# Hadrien Cornier
 
-I'm Hadrien Cornier, with a background in software, data, and production machine learning. My current focus is robotics data, evaluation, and machine learning. I have a lot to learn, so I use experiments and open-source contributions to test what I understand.
+
+I'm Hadrien, with a background in software, data, and production machine learning. My current focus is robotics data, evaluation, and machine learning. I have a lot to learn, so I use experiments and open-source contributions to test what I understand.
 
 ## Recent open-source contributions
 
