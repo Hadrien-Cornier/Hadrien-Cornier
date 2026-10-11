@@ -2,6 +2,14 @@
 
 I'm Hadrien, with a background in software, data, and production machine learning. My current focus is robotics data, evaluation, and machine learning. I have a lot to learn, so I use experiments and open-source contributions to test what I understand.
 
+## Featured project: Culture Calendar
+
+Culture Calendar is my automated calendar for cultural events in Austin. It covers film, classical music, opera, ballet, book clubs, and visual arts. You can search the calendar and read AI-written reviews and ratings.
+
+[Explore the calendar](https://hadrien-cornier.github.io/Culture-Calendar/) · [Source code](https://github.com/Hadrien-Cornier/Culture-Calendar)
+
+**[Subscribe to the newsletter](https://buttondown.com/culture-calendar)**
+
 ## Recent open-source contributions
 
 Selected pull requests I authored or co-authored, with their impact. Status checked October 8, 2026.
