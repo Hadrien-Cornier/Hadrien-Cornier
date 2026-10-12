@@ -12,27 +12,27 @@ Culture Calendar is my automated calendar for cultural events in Austin. It cove
 
 ## Recent open-source contributions
 
-Selected pull requests I authored or co-authored, with their impact. Status checked October 8, 2026.
+Selected pull requests I authored or co-authored, with their impact. Status checked October 12, 2026.
 
 ### Merged
 
+- **[LeRobot #4926: fix the Feetech register name](https://github.com/huggingface/lerobot/pull/4926)** · Author · October 12. Removed a trailing space from the acceleration-multiplier register name so reads and writes work with the expected spelling; added mocked read/write and control-table regression tests.
+- **[LeRobot #4874: multi-worker streaming](https://github.com/huggingface/lerobot/pull/4874)** · Author · October 12. Enabled multiple DataLoader workers per rank: **2.14–2.52× CPU loader throughput** with 4 workers versus 1 on two datasets with 8-vCPU machines. Includes exact-coverage and resume tests; higher memory use and batch-diversity trade-offs are documented. GPU-bound training did not speed up.
+- **[leLab #123: camera rotation throughout the workflow](https://github.com/huggingface/leLab/pull/123)** · Author · October 9. Added saved camera rotation across previews, recording and inference, so an upside-down wrist camera can use the same orientation throughout.
 - **[LeRobot #4871: honor the training seed](https://github.com/huggingface/lerobot/pull/4871)** · Author · October 8. Fixed streaming runs silently using seed 42 instead of the configured training seed, with tests for repeatable ordering and checkpoint resume.
 - **[leLab #122: repair statistics from the correct video](https://github.com/huggingface/leLab/pull/122)** · Author · October 8. Preserved chunk identity when recovering interrupted recordings, preventing image-normalization statistics from being calculated from another episode's video.
-- **[LeRobot #3917: faster episode-pool streaming](https://github.com/huggingface/lerobot/pull/3917)** · Co-author · October 7. Contributed four optimizations with **30–49% higher throughput in separate tested CPU workloads**. Smaller MP4 header reads also cut a full video-index build from **33 to 12.7 minutes** in the maintainer's test.
+- **[LeRobot #3917: faster episode-pool streaming](https://github.com/huggingface/lerobot/pull/3917)** · [Co-author](https://github.com/huggingface/lerobot/commit/ca69a2068462a37f7cdcb74180927a2f863d2bf7) · October 7. Metadata caching and plain-float timestamp checks gave **30–49% higher throughput in separate tested CPU workloads**. Smaller MP4 header reads also cut a full video-index build from **33 to 12.7 minutes** in the maintainer's test. These are separate measurements, not additive or end-to-end training gains.
 - **[mjlab #1202: preserve the final motion frame](https://github.com/mujocolab/mjlab/pull/1202)** · Author · October 3. Fixed motion resampling dropping the endpoint when it falls on the output grid, so converted clips reach their final pose; checked 25,664 frame-rate and clip-length combinations.
 
 ### Open
 
 These are proposed changes under review. Measurements come from tests on the PR branches.
 
-- **[LeRobot #4874: multi-worker streaming](https://github.com/huggingface/lerobot/pull/4874)** · Author · Opened October 8. Enables multiple DataLoader workers per rank: **2.14–2.52× loader throughput** on two datasets with 8-vCPU machines. Includes exact-coverage and resume tests; higher memory use and batch-diversity trade-offs are documented. GPU-bound training did not speed up.
-- **[leLab #123: camera rotation throughout the workflow](https://github.com/huggingface/leLab/pull/123)** · Author · Opened October 5. Adds saved camera rotation across previews, recording and inference, so an upside-down wrist camera can use the same orientation throughout.
-- **[mjlab #1210: randomize only selected actuators](https://github.com/mujocolab/mjlab/pull/1210)** · Author · Opened October 4. Fixes actuator-subset indexing crashes and limits gain and effort randomization to the selected motors and environments, preserving excluded settings.
-- **[mink #191: reuse Menagerie assets](https://github.com/kevinzakka/mink/pull/191)** · Author · Opened October 4. Replaces 416 byte-identical bundled assets with package assets while retaining custom models and licenses; validates model equivalence and isolated package installs.
-- **[OpenResearch #531: evaluate literature retrieval](https://github.com/alphaXiv/OpenResearch/pull/531)** · Author · Opened October 4. Adds offline ScholarCatalyst scoring with Recall and nDCG, source-leakage checks, and explicit missing-query accounting. The evaluator is validated on 894 questions; no retrieval-quality gain is established.
-- **[stable-worldmodel #334: correct action repetition](https://github.com/galilai-group/stable-worldmodel/pull/334)** · Author · Opened September 30. Makes the expert policies honor action-repeat probability without leaking actions across episode resets or crashing when the environment count changes.
-- **[stable-worldmodel #333: make the LeRobot adapter usable](https://github.com/galilai-group/stable-worldmodel/pull/333)** · Author · Opened September 30. Fixes missing dataset dependencies and replaces silently skipped adapter checks with offline tests that fail on a broken installation.
-- **[stable-worldmodel #331: measure steps to success](https://github.com/galilai-group/stable-worldmodel/pull/331)** · Author · Opened September 26. Adds the first successful step per evaluation trial, so policies with the same success rate can be compared by how many actions they need.
+- **[LeRobot #4920: discard stale Feetech replies](https://github.com/huggingface/lerobot/pull/4920)** · Author · Opened October 11. Clears old input bytes before each request to avoid reading stale load values as positions. Controlled, torque-off SO-101 tests eliminated the wrong replies in the tested cases; replies arriving after the reset remain a limitation.
+- **[LeRobot #4905: migrate checkpoints without an optional config](https://github.com/huggingface/lerobot/pull/4905)** · Author · Opened October 10. Lets Hub checkpoint migration continue when the optional training-config file is missing, while preserving authentication errors. Validated with regression tests and a real ACT checkpoint migration.
+- **[LeRobot #4891: repeatable streaming with no worker process](https://github.com/huggingface/lerobot/pull/4891)** · Author · Opened October 8. Applies image transforms on the training thread when `num_workers=0`, avoiding random-number races between decoder threads. Two same-seed CPU training runs produced identical losses across the tested 20 steps.
+- **[LeRobot #4890: pass the trainer's data-parallel rank](https://github.com/huggingface/lerobot/pull/4890)** · Author · Opened October 8. Prevents ranks from silently streaming the full dataset when a launcher omits rank environment variables. A two-process test gives each rank a disjoint half of the dataset.
+- **[LeRobot #4695: keep cleaning up after a motor error](https://github.com/huggingface/lerobot/pull/4695)** · Author · Opened September 21. Attempts torque disable on every serial motor and port closure even after an individual failure, then reports the error. Includes regression tests and SO-101 Feetech validation; cleanup remains best-effort.
 
 ## Open-source hardware: SO-101 pen holder
 
