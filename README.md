@@ -2,15 +2,13 @@
 
 I'm Hadrien, with a background in software, data, and production machine learning. My current focus is robotics data, evaluation, and machine learning. I have a lot to learn, so I use experiments and open-source contributions to test what I understand.
 
-## New: Breaking Bellman, a game to learn reinforcement learning
+## Breaking Bellman
 
-[**Breaking Bellman**](https://github.com/Hadrien-Cornier/breaking-bellman) is a free, open-source game where you learn reinforcement learning by breaking it. Real RL algorithms train in your browser, in seconds, and fail in front of you: a value estimate climbs to 4.7 million, a dog learns to sit and stare at the stick instead of fetching it. You predict what happens, read the autopsy, and change one word of the update rule. When your sentence works, the game shows the paper you just rediscovered, from Q-learning and DQN to PPO, SAC, IQL and the robot-learning methods of today.
+A small browser game for learning reinforcement learning. RL algorithms fail in front of you, and you fix them one word at a time.
 
-It's one HTML file with no server and no account. An AI tutor is optional and uses your own API key.
+[Play it](https://hadrien-cornier.github.io/breaking-bellman/) · [Source](https://github.com/Hadrien-Cornier/breaking-bellman) · [Blog post](https://hadrien-cornier.github.io/robotics/breaking-bellman/)
 
-[Play it](https://github.com/Hadrien-Cornier/breaking-bellman/releases/latest/download/breaking-bellman.html) · [Source code](https://github.com/Hadrien-Cornier/breaking-bellman) · [Why I made it](https://hadrien-cornier.github.io/robotics/breaking-bellman/)
-
-<a href="https://github.com/Hadrien-Cornier/breaking-bellman"><img src="https://raw.githubusercontent.com/Hadrien-Cornier/breaking-bellman/main/docs/screenshots/campaign.png" width="640" alt="A Breaking Bellman level: the map of 17 levels, ten slot machines with true payouts and the learner's beliefs, and the update rule as a sentence of words you can change"></a>
+<a href="https://hadrien-cornier.github.io/breaking-bellman/"><img src="https://raw.githubusercontent.com/Hadrien-Cornier/breaking-bellman/main/docs/screenshots/casino.png" width="560" alt="A robot in a casino plays ten slot machines and is confidently wrong about which one is best"></a>
 
 ## Featured project: Culture Calendar
 
@@ -68,7 +66,7 @@ My latest series, **From policy to action: the last mile of robotics control**, 
 4. [Learning what the physics misses](https://hadrien-cornier.github.io/robotics/so101-4-learning-what-physics-misses/) (October 5, 2026)
 5. [A pen holder that shows the arm’s error, not its own](https://hadrien-cornier.github.io/robotics/so101-pen-holder/) (October 5, 2026)
 
-Outside the series: [I learn by breaking things, so I made a game where RL breaks](https://hadrien-cornier.github.io/robotics/breaking-bellman/) (October 15, 2026), about Breaking Bellman.
+Outside the series: [I made a small game where RL algorithms break](https://hadrien-cornier.github.io/robotics/breaking-bellman/) (October 15, 2026).
 
 ### Earlier writing and experiments
 
