@@ -2,6 +2,16 @@
 
 I'm Hadrien, with a background in software, data, and production machine learning. My current focus is robotics data, evaluation, and machine learning. I have a lot to learn, so I use experiments and open-source contributions to test what I understand.
 
+## New: Breaking Bellman, a game to learn reinforcement learning
+
+[**Breaking Bellman**](https://github.com/Hadrien-Cornier/breaking-bellman) is a free, open-source game where you learn reinforcement learning by breaking it. Real RL algorithms train in your browser, in seconds, and fail in front of you: a value estimate climbs to 4.7 million, a dog learns to sit and stare at the stick instead of fetching it. You predict what happens, read the autopsy, and change one word of the update rule. When your sentence works, the game shows the paper you just rediscovered, from Q-learning and DQN to PPO, SAC, IQL and the robot-learning methods of today.
+
+It's one HTML file with no server and no account. An AI tutor is optional and uses your own API key.
+
+[Play it](https://github.com/Hadrien-Cornier/breaking-bellman/releases/latest/download/breaking-bellman.html) · [Source code](https://github.com/Hadrien-Cornier/breaking-bellman) · [Why I made it](https://hadrien-cornier.github.io/robotics/breaking-bellman/)
+
+<a href="https://github.com/Hadrien-Cornier/breaking-bellman"><img src="https://raw.githubusercontent.com/Hadrien-Cornier/breaking-bellman/main/docs/screenshots/campaign.png" width="640" alt="A Breaking Bellman level: the map of 17 levels, ten slot machines with true payouts and the learner's beliefs, and the update rule as a sentence of words you can change"></a>
+
 ## Featured project: Culture Calendar
 
 Culture Calendar is my automated calendar for cultural events in Austin. It covers film, classical music, opera, ballet, book clubs, and visual arts. You can search the calendar and read AI-written reviews and ratings.
@@ -57,6 +67,8 @@ My latest series, **From policy to action: the last mile of robotics control**, 
 3. [Six ways to choose the goal](https://hadrien-cornier.github.io/robotics/so101-3-choosing-the-goal/) (October 4, 2026)
 4. [Learning what the physics misses](https://hadrien-cornier.github.io/robotics/so101-4-learning-what-physics-misses/) (October 5, 2026)
 5. [A pen holder that shows the arm’s error, not its own](https://hadrien-cornier.github.io/robotics/so101-pen-holder/) (October 5, 2026)
+
+Outside the series: [I learn by breaking things, so I made a game where RL breaks](https://hadrien-cornier.github.io/robotics/breaking-bellman/) (October 15, 2026), about Breaking Bellman.
 
 ### Earlier writing and experiments
 
