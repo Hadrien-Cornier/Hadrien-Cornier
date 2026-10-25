@@ -7,7 +7,7 @@ I learn by implementing recent papers and trying things on a robot. It helps me 
 | What I'm exploring | What I've been working on |
 | --- | --- |
 | Learning from papers | [Faster-WAM](https://github.com/huggingface/lerobot/pull/5049), now merged into LeRobot. [QF3](https://github.com/huggingface/lerobot/pull/5081) is an open proposal for a state-only flow actor. |
-| Robotics data | [LeRobot contributions](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3AHadrien-Cornier) around streaming and repeatability. |
+| Robotics data | [All LeRobot pull requests](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3AHadrien-Cornier) around streaming and repeatability. |
 | Robot control | [SO101 control experiments](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/) and a [pen holder](https://github.com/Hadrien-Cornier/so101-pen-holder) for the arm. |
 
 I write about robotics, reinforcement learning, and experiments on [my blog](https://hadrien-cornier.github.io/). A recent article looks at [world action models and VLAs](https://hadrien-cornier.github.io/robotics/world-action-models-vs-vlas/).
