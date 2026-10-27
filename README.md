@@ -10,7 +10,7 @@ I learn by implementing recent papers and trying things on a robot. It helps me 
 | Robotics data | [All LeRobot pull requests](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3AHadrien-Cornier) around streaming and repeatability. |
 | Robot control | [SO101 control experiments](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/) and a [pen holder](https://github.com/Hadrien-Cornier/so101-pen-holder) for the arm. |
 
-I write about robotics, reinforcement learning, and experiments on [my blog](https://hadrien-cornier.github.io/). A recent article looks at [world action models and VLAs](https://hadrien-cornier.github.io/robotics/world-action-models-vs-vlas/).
+I write about robotics, reinforcement learning, and experiments on [my blog](https://hadrien-cornier.github.io/). A recent article explains [why LLM reinforcement learning breaks on robots](https://hadrien-cornier.github.io/robotics/why-llm-rl-breaks-on-robots/) and how the frontier is fixing it.
 
 ## Breaking Bellman
 
