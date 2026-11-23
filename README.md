@@ -7,8 +7,8 @@ I learn by implementing recent papers and trying things on a robot. It helps me 
 | What I'm exploring | What I've been working on |
 | --- | --- |
 | Learning from papers | [Faster-WAM](https://github.com/huggingface/lerobot/pull/5049), now merged into LeRobot. [QF3](https://github.com/huggingface/lerobot/pull/5081) is an open proposal for a state-only flow actor. |
-| Robotics data | Streaming, repeatability, and an open proposal to [record calibration and servo settings](https://github.com/huggingface/lerobot/pull/5330) with each episode. [All LeRobot pull requests](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3AHadrien-Cornier). |
-| Robot control | [SO101 control experiments](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/) and a [pen holder](https://github.com/Hadrien-Cornier/so101-pen-holder) for the arm. |
+| Robotics data | Streaming and repeatability: open proposals to [reuse video decoders and group reads](https://github.com/lhoestq/lerobot/pull/1) and [record calibration and servo settings](https://github.com/huggingface/lerobot/pull/5330) with each episode. [All LeRobot pull requests](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3AHadrien-Cornier). |
+| Robot control | [SO101 control experiments](https://hadrien-cornier.github.io/robotics/so101-1-target-and-goal/) and a [pen holder](https://github.com/Hadrien-Cornier/so101-pen-holder) for the arm. My [Genesis camera fix](https://github.com/Genesis-Embodied-AI/genesis-world/pull/3540) merged, and my shutdown fix was [adapted and merged in LeRobot](https://github.com/huggingface/lerobot/pull/5295). |
 
 I write about robotics, reinforcement learning, and experiments on [my blog](https://hadrien-cornier.github.io/). A recent article explains [why LLM reinforcement learning breaks on robots](https://hadrien-cornier.github.io/robotics/why-llm-rl-breaks-on-robots/) and how the frontier is fixing it.
 
